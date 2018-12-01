@@ -1,6 +1,7 @@
 ### StereoNet: Guided Hierarchical Refinement for Real-Time Edge-Aware Depth prediction model in pytorch. ECCV2018
 
 ### my model result
+Now, my model's speed can achieve 30FPS to 60 FPS on 540*960 img with the best result of 2.16 EPE_all on sceneflow dataset by end-to-end training. 
 the following are the side outputs and the prediction example
 ![train example](https://github.com/meteorshowers/StereoNet/blob/master/doc/iter-21200.jpg)
 
