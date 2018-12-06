@@ -1,5 +1,5 @@
 ### StereoNet: Guided Hierarchical Refinement for Real-Time Edge-Aware Depth prediction model in pytorch. ECCV2018
-I will release the code after I get the best result.
+I will release all the code after I get the best result.
 ### If you want to communicate with me about the StereoNet, please concact me without hesitating. My email: 
 ### xuanyili.edu@gmail.com  
 ### my model result
