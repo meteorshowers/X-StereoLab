@@ -3,7 +3,7 @@ I will release all the code after I get the best result.
 ### If you want to communicate with me about the StereoNet, please concact me without hesitating. My email: 
 ### xuanyili.edu@gmail.com  
 ### my model result
-Now, my model's speed can achieve 60FPS on 540*960 img with the best result of 1.87 EPE_all with 16X multi model and 2.04 EPE_all with 16X single model on sceneflow dataset by end-to-end training. 
+Now, my model's speed can achieve 60FPS on 540*960 img with the best result of 1.87 EPE_all with 16X multi model and 2.00 EPE_all with 16X single model on sceneflow dataset by end-to-end training. 
 the following are the side outputs and the prediction example
 ![train example](https://github.com/meteorshowers/StereoNet/blob/master/doc/iter-21200.jpg)
 
