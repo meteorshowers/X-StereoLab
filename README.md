@@ -12,7 +12,9 @@ the following are the side outputs and the prediction example
 ![test example](https://github.com/meteorshowers/StereoNet/blob/master/doc/iter-70.jpg)
 
 ### Citation
+* refercence[1]
 If you find our work useful in your research, please consider citing:
+
 @inproceedings{khamis2018stereonet,
   title={Stereonet: Guided hierarchical refinement for real-time edge-aware depth prediction},
   author={Khamis, Sameh and Fanello, Sean and Rhemann, Christoph and Kowdle, Adarsh and Valentin, Julien and Izadi, Shahram},
