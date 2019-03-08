@@ -13,6 +13,7 @@ the following are the side outputs and the prediction example
 
 ### Citation
 * refercence[1]
+
 If you find our work useful in your research, please consider citing:
 
 @inproceedings{khamis2018stereonet,
