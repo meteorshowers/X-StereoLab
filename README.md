@@ -44,11 +44,11 @@ run main8Xmulti.py
 
 ### Updates
 
-*finetune the performance beating the original paper.
+* finetune the performance beating the original paper.
 
 ### To do
 
-*optimize the inference speed
+* optimize the inference speed
 
 ### pretrain model
 
