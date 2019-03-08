@@ -56,5 +56,5 @@ run main8Xmulti.py
 
 ### Thanks
 
-*Thanks to  <a href="https://github.com/samehkhamis"> Sameh Khamis' help
+* Thanks to  <a href="https://github.com/samehkhamis"> Sameh Khamis' help
 
