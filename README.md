@@ -33,15 +33,16 @@ The speed can reach 60FPS with lower performance.
 
 ### License
 
-Our code is released under MIT License (see LICENSE file for details).
+* Our code is released under MIT License (see LICENSE file for details).
 
 ### Installaton
 
-pytorch0.4
+* python3.6
+* pytorch0.4
 
 ### Usage
 
-run main8Xmulti.py
+* run main8Xmulti.py
 
 ### Updates
 
