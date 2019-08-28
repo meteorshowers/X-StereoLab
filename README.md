@@ -1,4 +1,6 @@
 ### StereoNet: Guided Hierarchical Refinement for Real-Time Edge-Aware Depth prediction model in pytorch. ECCV2018
+### ActiveStereoNet:End-to-End Self-Supervised Learning for Active Stereo Systems ECCV2018 Oral（Coming Soon）
+
 
 ### If you want to communicate with me about the StereoNet, please concact me without hesitating. My email: 
 ### xuanyili.edu@gmail.com  
