@@ -33,7 +33,7 @@ The speed can reach 60FPS with lower performance.
 
 | Method |EPE_all on sceneflow dataset |EPE_all on kitti2012 dataset|EPE_all on kitti2015 dataset|
 |:---|:---:|:---:|:---:|
-<> |ours(16X multi)| 1.32|    |   |
+[^_^]: |ours(16X multi)| 1.32|    |   |
 | Reference[1]| 1.525 |    |   |
 
 ### License
