@@ -59,7 +59,7 @@ The speed can reach 60FPS with lower performance.
 
 ### pretrain model
 
-* coming soon.
+* Sceneflow pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
 
 ### Thanks
 
