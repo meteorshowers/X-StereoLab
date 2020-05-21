@@ -12,7 +12,8 @@ the following are the side outputs and the prediction example
 ![train example](https://github.com/meteorshowers/StereoNet/blob/master/doc/iter-21200.jpg)
 #### test example(outputs of 16single model and GT)
 ![test example](https://github.com/meteorshowers/StereoNet/blob/master/doc/iter-70.jpg)
-
+![test example](https://github.com/meteorshowers/StereoNet/blob/master/doc/figure2.png)
+over 100FPS on titan xp gpu
 ### Citation
 * refercence[1]
 
