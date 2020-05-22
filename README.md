@@ -54,10 +54,11 @@ The speed can reach 60FPS with lower performance.
 
 * finetune the performance beating the original paper.
 
-### To do
+### rethink
 
-* optimize the inference speed
-
+* Do not design massive deep networks with multiple stages to improve kitti by 1%(no meaning doing this)
+* Use metrics that matter for visual navigation (hint: not L1 depth error)
+* ...
 ### pretrain model
 
 * Sceneflow pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
