@@ -10,10 +10,12 @@ Now, my model's speed can achieve 25 FPS on 540*960 img with the best result of 
 the following are the side outputs and the prediction example
 #### train example
 ![train example](https://github.com/meteorshowers/StereoNet/blob/master/doc/iter-21200.jpg)
-#### test example(outputs of 16single model and GT)
+#### test example
 ![test example](https://github.com/meteorshowers/StereoNet/blob/master/doc/iter-70.jpg)
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/figure2.png)
 over 100FPS on titan xp gpu
+![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/figure3.png)
+16FPS on titan xp gpu
 ### Citation
 * refercence[1]
 
