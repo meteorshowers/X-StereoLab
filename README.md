@@ -13,12 +13,14 @@ the following are the side outputs and the prediction example
 #### test example
 ![test example](https://github.com/meteorshowers/StereoNet/blob/master/doc/iter-70.jpg)
 [^_^]:
+
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/figure2.png)
 over 100FPS on titan xp gpu
 
 
 #### large example
 [^_^]:
+
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/figure3.png)
 
 16FPS on titan xp gpu
