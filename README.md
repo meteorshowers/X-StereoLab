@@ -22,6 +22,11 @@ over 100FPS on titan xp gpu
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/figure3.png)
 
 16FPS on titan xp gpu
+
+#### convert to point cloud view
+
+![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/3Dview.png)
+
 ### Citation
 * refercence[1]
 
