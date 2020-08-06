@@ -17,13 +17,13 @@ the following are the side outputs and the prediction example
 over 100FPS on titan xp gpu
 
 
-#### large example
+#### real time application
 
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/figure3.png)
 
-16FPS on titan xp gpu
+![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/application.png)
 
-#### convert to point cloud view
+#### point cloud view example
 
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/3dview.png)
 
