@@ -26,7 +26,7 @@ over 100FPS on titan xp gpu
 ### ActiveStereoNet:End-to-End Self-Supervised Learning for Active Stereo Systems ECCV2018 Oral
 
 #### ActiveStereoNet model vis result
-![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/result.png)
+![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/asn.png)
 
 #### plane fit mertirc result
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/plane_fit.png)
