@@ -3,7 +3,9 @@
 
 
 ### If you want to communicate with me about the StereoNet, please concact me without hesitating. My email: 
-### xuanyili.edu@gmail.com  
+### xuanyili.edu@gmail.com 
+
+### StereoNet: Guided Hierarchical Refinement for Real-Time Edge-Aware Depth prediction model in pytorch. ECCV2018
 ### my model result
 
 Now, my model's speed can achieve 25 FPS on 540*960 img with the best result of 1.87 EPE_all with 16X multi model， 1.95 EPE_all with 16X single model on sceneflow dataset by end-to-end training. 
@@ -25,7 +27,10 @@ over 100FPS on titan xp gpu
 
 ### ActiveStereoNet:End-to-End Self-Supervised Learning for Active Stereo Systems ECCV2018 Oral
 
-#### ActiveStereoNet model vis result
+#### ActiveStereoNet model disparity vis result
+![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/asn.png)
+
+#### ActiveStereoNet model surface normal vis result
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/asn.png)
 
 #### plane fit mertirc result
@@ -81,9 +86,12 @@ The speed can reach 60FPS with lower performance.
 * Use metrics that matter for visual navigation (hint: not L1 depth error)
 * ...
 ### pretrain model
-
+#### StereoNet pretrain model(pytorch version)
 * Sceneflow pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
-
+#### ActiveStereoNet pretrain model(pytorch version)
+* D435 pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
+#### ActiveStereoNet pretrain model(tensorflow version)
+* D435 pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
 ### Thanks
 
 * Thanks to  <a href="https://github.com/samehkhamis"> Sameh Khamis' help
