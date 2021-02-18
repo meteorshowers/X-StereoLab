@@ -18,11 +18,6 @@ over 100FPS on titan xp gpu
 * KITTI2015 submission: http://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=94cf8e1c4f9d61df98c8e8cc8c726a34360208be
   ranking 179
 
-#### real time application
-
-![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/figure3.png)
-
-![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/application.png)
 
 #### point cloud view example
 
