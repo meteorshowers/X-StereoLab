@@ -29,7 +29,9 @@ over 100FPS on titan xp gpu
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/asn.png)
 
 #### plane fit mertirc result
-![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/plane_fit.png)
+
+<p align="center">![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/plane_fit.png)</p>
+
 
 ### Citation
 * refercence[1]
