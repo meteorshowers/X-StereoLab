@@ -27,9 +27,9 @@ the following are the side outputs and the prediction example
 ![test example](https://github.com/meteorshowers/StereoNet/blob/master/doc/iter-70.jpg)
 
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/figure2.png)
-over 100FPS on titan xp gpu
-* KITTI2015 submission: http://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=94cf8e1c4f9d61df98c8e8cc8c726a34360208be
-  ranking 179
+real time version submission
+* KITTI2015 submission: http://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=19f20256af911773b2815a995644f237f229968e
+  ranking 175
 
 
 #### point cloud view example
