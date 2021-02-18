@@ -32,7 +32,7 @@ over 100FPS on titan xp gpu
 
 
 <div align=center>
-<img src="https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/plane_fit.png" width="30%" height="30%">
+<img src="https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/plane_fit.png" width="80%" height="80%">
 </div>
 
 ### Citation
