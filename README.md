@@ -51,6 +51,18 @@ over 100FPS on titan xp gpu
 <img src="https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/plane_fit.png" width="80%" height="80%">
 </div>
 
+
+#### ActiveStereoNet youtube video demo
+
+* youtube video https://www.youtube.com/watch?v=pqKZs1b1b0Y.
+
+
+
+<div align=center>
+<img src="https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/video.png" width="80%" height="80%">
+</div>
+
+
 ### Citation
 * refercence[1]
 
