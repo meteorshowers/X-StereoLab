@@ -42,7 +42,7 @@ over 100FPS on titan xp gpu
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/asn.png)
 
 #### ActiveStereoNet model surface normal vis result
-![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/asn.png)
+![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/normal.png)
 
 #### plane fit mertirc result
 
