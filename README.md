@@ -3,7 +3,20 @@
 
 
 ### If you want to communicate with me about the StereoNet, please concact me without hesitating. My email: 
-### xuanyili.edu@gmail.com  
+### xuanyili.edu@gmail.com 
+
+### StereoNet: Guided Hierarchical Refinement for Real-Time Edge-Aware Depth prediction model in pytorch. ECCV2018
+
+### StereoNet Introduction 
+I implement the real-time  stereo model according to the   StereoNet   model in pytorch.
+The speed can reach 30FPS with top performance.
+The speed can reach 60FPS with lower performance.
+
+| Method |EPE_all on sceneflow dataset |EPE_all on kitti2012 dataset|EPE_all on kitti2015 dataset|
+|:---|:---:|:---:|:---:|
+|ours(8X single)| stage0:2.26 stage1:1.38|    |   |
+| Reference[1]| stage1: 1.525 |    |   |
+
 ### my model result
 
 Now, my model's speed can achieve 25 FPS on 540*960 img with the best result of 1.87 EPE_all with 16X multi model， 1.95 EPE_all with 16X single model on sceneflow dataset by end-to-end training. 
@@ -18,15 +31,25 @@ over 100FPS on titan xp gpu
 * KITTI2015 submission: http://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=94cf8e1c4f9d61df98c8e8cc8c726a34360208be
   ranking 179
 
-#### real time application
-
-![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/figure3.png)
-
-![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/application.png)
 
 #### point cloud view example
 
 ![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/3dview.png)
+
+### ActiveStereoNet:End-to-End Self-Supervised Learning for Active Stereo Systems ECCV2018 Oral
+
+#### ActiveStereoNet model disparity vis result
+![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/asn.png)
+
+#### ActiveStereoNet model surface normal vis result
+![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/normal.png)
+
+#### plane fit mertirc result
+
+
+<div align=center>
+<img src="https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/plane_fit.png" width="80%" height="80%">
+</div>
 
 ### Citation
 * refercence[1]
@@ -41,15 +64,7 @@ If you find our work useful in your research, please consider citing:
   year={2018}
 }
 
-### Introduction 
-I implement the real-time  stereo model according to the   StereoNet   model in pytorch.
-The speed can reach 30FPS with top performance.
-The speed can reach 60FPS with lower performance.
 
-| Method |EPE_all on sceneflow dataset |EPE_all on kitti2012 dataset|EPE_all on kitti2015 dataset|
-|:---|:---:|:---:|:---:|
-|ours(8X single)| stage0:2.26 stage1:1.38|    |   |
-| Reference[1]| stage1: 1.525 |    |   |
 
 ### License
 
@@ -74,9 +89,12 @@ The speed can reach 60FPS with lower performance.
 * Use metrics that matter for visual navigation (hint: not L1 depth error)
 * ...
 ### pretrain model
-
+#### StereoNet pretrain model(pytorch version)
 * Sceneflow pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
-
+#### ActiveStereoNet pretrain model(pytorch version)
+* D435 pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
+#### ActiveStereoNet pretrain model(tensorflow version)
+* D435 pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
 ### Thanks
 
 * Thanks to  <a href="https://github.com/samehkhamis"> Sameh Khamis' help
