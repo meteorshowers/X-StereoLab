@@ -30,8 +30,10 @@ over 100FPS on titan xp gpu
 
 #### plane fit mertirc result
 
-<p align="center">![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/plane_fit.png)</p>
 
+<div align=center>
+<img src="https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/plane_fit.png" width="30%" height="30%">
+</div>
 
 ### Citation
 * refercence[1]
