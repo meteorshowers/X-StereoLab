@@ -9,8 +9,6 @@
 
 ### StereoNet Introduction 
 I implement the real-time  stereo model according to the   StereoNet   model in pytorch.
-The speed can reach 30FPS with top performance.
-The speed can reach 60FPS with lower performance.
 
 | Method |EPE_all on sceneflow dataset |EPE_all on kitti2012 dataset|EPE_all on kitti2015 dataset|
 |:---|:---:|:---:|:---:|
