@@ -102,7 +102,7 @@ If you find our work useful in your research, please consider citing:
 #### StereoNet pretrain model(pytorch version)
 * Sceneflow pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
 #### ActiveStereoNet pretrain model(pytorch version)
-* D435 pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
+* D435 pretrain weight https://drive.google.com/file/d/1MDbRy4jO3IWM0zqn_D0sbZVjECZIl4g3/view?usp=sharing.
 #### ActiveStereoNet pretrain model(tensorflow version)
 * D435 pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
 ### Thanks
