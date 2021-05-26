@@ -1,5 +1,6 @@
 ### StereoNet: Guided Hierarchical Refinement for Real-Time Edge-Aware Depth prediction model in pytorch. ECCV2018
 ### ActiveStereoNet:End-to-End Self-Supervised Learning for Active Stereo Systems ECCV2018 Oral
+### HITNet: Hierarchical Iterative Tile Refinement Network for Real-time Stereo Matching
 
 
 ### If you want to communicate with me about the StereoNet, please concact me without hesitating. My email: 
@@ -105,7 +106,40 @@ If you find our work useful in your research, please consider citing:
 * D435 pretrain weight https://drive.google.com/file/d/1MDbRy4jO3IWM0zqn_D0sbZVjECZIl4g3/view?usp=sharing.
 #### ActiveStereoNet pretrain model(tensorflow version)
 * D435 pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
+
+### Citation
+* refercence[1]
+
+If you find this work useful in your research, please consider citing:
+
+@article{tankovich2020hitnet,
+  title={HITNet: Hierarchical Iterative Tile Refinement Network for Real-time Stereo Matching},
+  author={Tankovich, Vladimir and H{\"a}ne, Christian and Fanello, Sean and Zhang, Yinda and Izadi, Shahram and Bouaziz, Sofien},
+  journal={arXiv preprint arXiv:2007.12140},
+  year={2020}
+}
+
+@inproceedings{tankovich2018sos,
+  title={Sos: Stereo matching in o (1) with slanted support windows},
+  author={Tankovich, Vladimir and Schoenberg, Michael and Fanello, Sean Ryan and Kowdle, Adarsh and Rhemann, Christoph and Dzitsiuk, Maksym and Schmidt, Mirko and Valentin, Julien and Izadi, Shahram},
+  booktitle={2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={6782--6789},
+  year={2018},
+  organization={IEEE}
+}
+
+@inproceedings{fanello2017low,
+  title={Low compute and fully parallel computer vision with hashmatch},
+  author={Fanello, Sean Ryan and Valentin, Julien and Kowdle, Adarsh and Rhemann, Christoph and Tankovich, Vladimir and Ciliberto, Carlo and Davidson, Philip and Izadi, Shahram},
+  booktitle={2017 IEEE International Conference on Computer Vision (ICCV)},
+  pages={3894--3903},
+  year={2017},
+  organization={IEEE}
+}
+
+
 ### Thanks
 
 * Thanks to  <a href="https://github.com/samehkhamis"> Sameh Khamis' help
 
+* Thanks to  Vladimir Tankovich' help
