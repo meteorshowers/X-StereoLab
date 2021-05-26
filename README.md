@@ -142,4 +142,3 @@ If you find this work useful in your research, please consider citing:
 
 * Thanks to  <a href="https://github.com/samehkhamis"> Sameh Khamis' help
 
-* Thanks to  Vladimir Tankovich' help
