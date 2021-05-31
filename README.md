@@ -62,6 +62,15 @@ real time version submission
 <img src="https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/video.png" width="80%" height="80%">
 </div>
 
+### HITNet: Hierarchical Iterative Tile Refinement Network for Real-time Stereo Matching
+
+
+| Method |EPE_all on sceneflow dataset |Bad3 on kitti2015 dataset|
+|:---|:---:|:---:|
+|ours | 0.70|  2.43 |
+| Reference| 0.53  |  1.98 |
+* KITTI2015 submission: http://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=226494ba5559e9f5f46bdbd681d1564fee78409e
+  ranking 145
 
 ### Citation
 * refercence[1]
