@@ -118,8 +118,7 @@ If you find our work useful in your research, please consider citing:
 * D435 pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
 
 ### Citation
-* refercence[1]
-
+* refercence[1] 
 @article{tankovich2020hitnet,
   title={HITNet: Hierarchical Iterative Tile Refinement Network for Real-time Stereo Matching},
   author={Tankovich, Vladimir and H{\"a}ne, Christian and Fanello, Sean and Zhang, Yinda and Izadi, Shahram and Bouaziz, Sofien},
@@ -127,7 +126,7 @@ If you find our work useful in your research, please consider citing:
   year={2020}
 }
 
-* refercence[2]
+* refercence[2] 
 @inproceedings{tankovich2018sos,
   title={Sos: Stereo matching in o (1) with slanted support windows},
   author={Tankovich, Vladimir and Schoenberg, Michael and Fanello, Sean Ryan and Kowdle, Adarsh and Rhemann, Christoph and Dzitsiuk, Maksym and Schmidt, Mirko and Valentin, Julien and Izadi, Shahram},
@@ -136,7 +135,7 @@ If you find our work useful in your research, please consider citing:
   year={2018},
   organization={IEEE}
 }
-* refercence[3]
+* refercence[3] 
 @inproceedings{fanello2017low,
   title={Low compute and fully parallel computer vision with hashmatch},
   author={Fanello, Sean Ryan and Valentin, Julien and Kowdle, Adarsh and Rhemann, Christoph and Tankovich, Vladimir and Ciliberto, Carlo and Davidson, Philip and Izadi, Shahram},
