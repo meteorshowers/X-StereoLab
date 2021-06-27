@@ -1,123 +1,208 @@
-### Stereo Matching in O(1) with Slanted Support Windows
-### StereoNet: Guided Hierarchical Refinement for Real-Time Edge-Aware Depth prediction model in pytorch. ECCV2018
-### ActiveStereoNet:End-to-End Self-Supervised Learning for Active Stereo Systems ECCV2018 Oral
-### HITNet: Hierarchical Iterative Tile Refinement Network for Real-time Stereo Matching
+# X-StereoLab
+
+X-StereoLab is an open source stereo matching and stereo 3D object detection toolbox based on PyTorch.
+## News: We released the codebase v0.0.0.
 
 
-### If you want to communicate with me about the StereoNet, please concact me without hesitating. My email: 
-### xuanyili.edu@gmail.com 
-
-### StereoNet: Guided Hierarchical Refinement for Real-Time Edge-Aware Depth prediction model in pytorch. ECCV2018
-
-### StereoNet Introduction 
-I implement the real-time  stereo model according to the   StereoNet   model in pytorch.
-
-| Method |EPE_all on sceneflow dataset |EPE_all on kitti2012 dataset|EPE_all on kitti2015 dataset|
-|:---|:---:|:---:|:---:|
-|ours(8X single)| stage0:2.26 stage1:1.38|    |   |
-| Reference[1]| stage1: 1.525 |    |   |
-
-### my model result
-
-Now, my model's speed can achieve 25 FPS on 540*960 img with the best result of 1.87 EPE_all with 16X multi model， 1.95 EPE_all with 16X single model on sceneflow dataset by end-to-end training. 
-the following are the side outputs and the prediction example
-#### train example
-![train example](https://github.com/meteorshowers/StereoNet/blob/master/doc/iter-21200.jpg)
-#### test example
-![test example](https://github.com/meteorshowers/StereoNet/blob/master/doc/iter-70.jpg)
-
-![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/figure2.png)
-real time version submission
-* KITTI2015 submission: http://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=19f20256af911773b2815a995644f237f229968e
-  ranking 175
-
-
-#### point cloud view example
-
-![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/3dview.png)
-
-### ActiveStereoNet:End-to-End Self-Supervised Learning for Active Stereo Systems ECCV2018 Oral
-
-#### ActiveStereoNet model disparity vis result
-![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/asn.png)
-
-#### ActiveStereoNet model surface normal vis result
-![test example](https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/normal.png)
-
-#### plane fit mertric result
-
-
-<div align=center>
-<img src="https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/plane_fit.png" width="80%" height="80%">
+* GOOGLE HITNET model pytorch training code is released.
+<div align="center">
+ <img src="doc/hitnet.png" width="80%">
 </div>
 
-
-#### ActiveStereoNet youtube video demo
-
-* youtube video https://www.youtube.com/watch?v=pqKZs1b1b0Y.
+* GOOGLE HITNET model pytorch  KITTI2015 submission: http://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=226494ba5559e9f5f46bdbd681d1564fee78409e
+  ranking 145 with 80GMAC
 
 
+### Requirements
+All the codes are tested in the following environment:
+* Ubuntu 16.04
+* Python 3.7
+* PyTorch 1.1.0 or 1.2.0 or 1.3.0
+* Torchvision 0.2.2 or 0.4.1
 
-<div align=center>
-<img src="https://github.com/meteorshowers/StereoNet-ActiveStereoNet/blob/master/fig/video.png" width="80%" height="80%">
-</div>
+### Installation
 
-### HITNet: Hierarchical Iterative Tile Refinement Network for Real-time Stereo Matching
+(1) Clone this repository.
+```
+git clone git@github.com:meteorshowers/X-StereoLab.git && cd X-StereoLab
+```
+
+(2) Setup Python environment.
+```
+conda activate -n xstereolab
+pip install -r requirements.txt --user
+
+## conda deactivate xstereolab
+```
+
+<!-- (3) Compile the rotated IoU library (for 3D detection). 
+```
+cd X-stereoLab/utils/rotate_iou && bash compile.sh & cd ../../../
+```
+
+(4) Compile and install X-StereoLab library (for 3D detection).
+```
+# the following will install the lib with symbolic links, so that
+# you can modify the file if you want and won't need to re-build it.
+python3 setup.py build develop --user
+``` -->
+
+### Data Preparation
+
+(1) Please download the KITTI dataset.
+```
+ln -s /path/to/KITTI_DATA_PATH ./data/kitti/
+ln -s /path/to/OUTPUT_PATH ./outputs/
+```
 
 
-| Method |EPE_all on sceneflow dataset |Bad3 on kitti2015 dataset|
-|:---|:---:|:---:|
-|ours | 0.70|  2.43 |
-| Reference| 0.53  |  1.98 |
-* KITTI2015 submission: http://www.cvlibs.net/datasets/kitti/eval_scene_flow_detail.php?benchmark=stereo&result=226494ba5559e9f5f46bdbd681d1564fee78409e
-  ranking 145
+### Multi-GPU Training
 
-### Citation
-* refercence[1]
+The training scripts support [multi-processing distributed training](https://github.com/pytorch/examples/tree/master/imagenet), which is much faster than the typical PyTorch DataParallel interface.
+```
+python3 tools/train_net.py --cfg ./configs/config_xxx.py --savemodel ./outputs/MODEL_NAME -btrain 4 -d 0-3 --multiprocessing-distributed
+```
+or
+```
+bash scripts/mptrain_xxx.sh
+```
+The training models, configuration and logs will be saved in the model folder.
 
+To load some pretrained model, you can run
+```
+python3 tools/train_net.py --cfg xxx/config.py --loadmodel ./outputs/MODEL_NAMEx --start_epoch xxx --savemodel ./outputs/MODEL_NAME -btrain 4 -d 0-3 --multiprocessing-distributed
+```
+If you want to continue training from some epochs, just set the cfg, loadmodel and start_epoch to the respective model path.
+
+Besides, you can start a tensorboard session by
+```
+tensorboard --logdir=./outputs/MODEL_NAME/tensorboard --port=6666
+```
+and visualize your training process by accessing https://localhost:6666 on your browser.
+
+### Inference and Evaluation
+
+on working ...
+
+### stereo matching Performance and Model Zoo
+
+<!-- We provide several pretrained models for our experiments. -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Methods</th>
+            <th>Epochs</th>
+            <!-- <th>Inference Time(s/im)</th> -->
+            <th>Train Mem (GB/Img)</th>
+            <th>Test Mem (GB/Img)</th>
+            <th>EPE</th>
+            <th>D1-all</th>
+            <th>Models</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HITNET (kitti)</td>
+            <td>4200</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>2.43%</td>
+            <td><a href=> GoogleDrive </a></td>
+        </tr>
+            <tr>
+            <td>HITNET (sceneflow)</td>
+            <td>200</td>
+            <td></td>
+            <td></td>
+            <td>0.65</td>
+            <td></td>
+            <td><a href=> GoogleDrive </a></td>
+        </tr>
+          <tr>
+            <td>stereonet (sceneflow)</td>
+            <td>20</td>
+            <td></td>
+            <td></td>
+            <td>1.10</td>
+            <td></td>
+            <td><a href=> GoogleDrive </a></td>
+        </tr>
+          <tr>
+            <td>ActiveStereoNet</td>
+            <td>10</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href=> GoogleDrive </a></td>
+        </tr>      
+        <tr>
+            <td>SOS</td>
+            <td rowspan=2></td>
+            <td rowspan=2> </td>
+            <td rowspan=2></td>
+            <td></td>
+            <td></td>
+            <td rowspan=2> </a></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+### stereo 3D detection Performance and Model Zoo
+on working...
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Methods</th>
+            <th>Epochs</th>
+            <!-- <th>Inference Time(s/im)</th> -->
+            <th>Train Mem (GB/Img)</th>
+            <th>Test Mem (GB/Img)</th>
+            <th>3D AP</th>
+            <th>BEV AP</th>
+            <th>2D AP</th>
+            <th>Models</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>PLUME</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href=""> GoogleDrive </a></td>
+        </tr>
+    </tbody>
+</table>
+
+
+### Video Demo
+
+We provide a video demo for showing the result of X-StereoLab. Here we show the predicted disparity map of activastereonet.
+
+<p align="center"> <a href="https://www.youtube.com/watch?v=pqKZs1b1b0Y"><img src="./doc/demo_cover.png" width="50%"></a> </p>
+
+### TODO List
+- [x] Multiprocessing GPU training
+- [x] TensorboardX
+- [x] Reduce training GPU memory usage
+- [x] eval and test code
+- [ ] Result visualization
+- [ ] Still in progress
+
+
+
+### Citations
 If you find our work useful in your research, please consider citing:
-
-@inproceedings{khamis2018stereonet,
-  title={Stereonet: Guided hierarchical refinement for real-time edge-aware depth prediction},
-  author={Khamis, Sameh and Fanello, Sean and Rhemann, Christoph and Kowdle, Adarsh and Valentin, Julien and Izadi, Shahram},
-  booktitle={Proceedings of the European Conference on Computer Vision (ECCV), Munich, Germany},
-  pages={8--14},
-  year={2018}
-}
-
-
-
-### License
-
-* Our code is released under MIT License (see LICENSE file for details).
-
-### Installaton
-
-* python3.6
-* pytorch0.4
-
-### Usage
-
-* run main8Xmulti.py
-
-### Updates
-
-* finetune the performance beating the original paper.
-
-### rethink
-
-* Do not design massive deep networks with multiple stages to improve kitti by 1%(no meaning doing this)
-* Use metrics that matter for visual navigation (hint: not L1 depth error)
-* ...
-### pretrain model
-#### StereoNet pretrain model(pytorch version)
-* Sceneflow pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
-#### ActiveStereoNet pretrain model(pytorch version)
-* D435 pretrain weight https://drive.google.com/file/d/1MDbRy4jO3IWM0zqn_D0sbZVjECZIl4g3/view?usp=sharing.
-#### ActiveStereoNet pretrain model(tensorflow version)
-* D435 pretrain weight https://drive.google.com/open?id=1bSwewxrRfmFCxZDyAtyYyQQiw05nSFI8.
-
-### Citation
+```
 * refercence[1] 
 @article{tankovich2020hitnet,
   title={HITNet: Hierarchical Iterative Tile Refinement Network for Real-time Stereo Matching},
@@ -135,18 +220,39 @@ If you find our work useful in your research, please consider citing:
   year={2018},
   organization={IEEE}
 }
-* refercence[3] 
-@inproceedings{fanello2017low,
-  title={Low compute and fully parallel computer vision with hashmatch},
-  author={Fanello, Sean Ryan and Valentin, Julien and Kowdle, Adarsh and Rhemann, Christoph and Tankovich, Vladimir and Ciliberto, Carlo and Davidson, Philip and Izadi, Shahram},
-  booktitle={2017 IEEE International Conference on Computer Vision (ICCV)},
-  pages={3894--3903},
-  year={2017},
-  organization={IEEE}
-}
+
+```
 
 
-### Thanks
+## Others contributors
 
-* Thanks to  <a href="https://github.com/samehkhamis"> Sameh Khamis' help
+<table border="0">
+  <tbody>
+    <tr align="center" >
+      <!-- <td>
+        ​ <a href="https://github.com/shenweichen"><img width="70" height="70" src="https://github.com/shenweichen.png?s=40" alt="pic"></a><br>
+        ​ <a href="https://github.com/shenweichen">Shen Weichen</a> ​
+        <p>
+        Alibaba Group  </p>​
+      </td> -->
+      <td>
+         <a href="https://github.com/vtankovich"><img width="70" height="70" src="https://avatars.githubusercontent.com/u/74434832?v=4" alt="pic"></a><br>
+         <a href="https://github.com/vtankovich">vtankovich</a> ​
+        <p>GOOGLE  </p>​
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+### Acknowledgment
+<!-- * Thanks to  <a href="https://github.com/vtankovich"> vtankovich
+ 
+* Thanks to  <a href="https://github.com/samehkhamis"> SamehKhamis -->
+
+* Thanks to  vtankovich
+* Thanks to  SamehKhamis 
+
+### Contact
+If you have any questions or suggestions about this repo, please feel free to contact me (xuanyili.edu@gmail.com).
 
