@@ -20,7 +20,7 @@ All the codes are tested in the following environment:
 * PyTorch 1.1.0 or 1.2.0 or 1.3.0
 * Torchvision 0.2.2 or 0.4.1
 
-### Installation
+### Installation 
 
 (1) Clone this repository.
 ```
