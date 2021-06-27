@@ -255,4 +255,21 @@ If you find our work useful in your research, please consider citing:
 
 ### Contact
 If you have any questions or suggestions about this repo, please feel free to contact me (xuanyili.edu@gmail.com).
-
+Wechat:
+<table border="0">
+  <tbody>
+    <tr align="center" >
+      <!-- <td>
+        ​ <a href="https://github.com/shenweichen"><img width="70" height="70" src="https://github.com/shenweichen.png?s=40" alt="pic"></a><br>
+        ​ <a href="https://github.com/shenweichen">Shen Weichen</a> ​
+        <p>
+        Alibaba Group  </p>​
+      </td> -->
+      <td>
+         <a href="https://github.com/meteorshowers"><img width="100" height="100" src='doc/wechat.png' alt="pic"></a><br>
+         <a href="https://github.com/meteorshowers">XUANYILI</a> ​
+        <p>  </p>​
+      </td>
+    </tr>
+  </tbody>
+</table>
