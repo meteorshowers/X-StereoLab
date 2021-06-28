@@ -60,17 +60,13 @@ ln -s /path/to/OUTPUT_PATH ./outputs/
 
 The training scripts support [multi-processing distributed training](https://github.com/pytorch/examples/tree/master/imagenet), which is much faster than the typical PyTorch DataParallel interface.
 ```
-python3 tools/train_net.py --cfg ./configs/config_xxx.py --savemodel ./outputs/MODEL_NAME -btrain 4 -d 0-3 --multiprocessing-distributed
-```
-or
-```
-bash scripts/mptrain_xxx.sh
+python3 tools/train_net_disp.py --cfg ./configs/config_xxx.py --savemodel ./outputs/MODEL_NAME -btrain 4 -d 0-3 --multiprocessing-distributed
 ```
 The training models, configuration and logs will be saved in the model folder.
 
 To load some pretrained model, you can run
 ```
-python3 tools/train_net.py --cfg xxx/config.py --loadmodel ./outputs/MODEL_NAMEx --start_epoch xxx --savemodel ./outputs/MODEL_NAME -btrain 4 -d 0-3 --multiprocessing-distributed
+python3 tools/train_net_disp.py --cfg xxx/config.py --loadmodel ./outputs/MODEL_NAMEx --start_epoch xxx --savemodel ./outputs/MODEL_NAME -btrain 4 -d 0-3 --multiprocessing-distributed
 ```
 If you want to continue training from some epochs, just set the cfg, loadmodel and start_epoch to the respective model path.
 
