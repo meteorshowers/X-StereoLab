@@ -251,6 +251,9 @@ If you find our work useful in your research, please consider citing:
 * Thanks to  vtankovich
 * Thanks to  SamehKhamis 
 
+### License
+The code is released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License for NonCommercial use only. Any commercial use should get formal permission first.
+
 ### Contact
 If you have any questions or suggestions about this repo, please feel free to contact me (xuanyili.edu@gmail.com).
 Wechat:
