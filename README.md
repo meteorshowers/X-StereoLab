@@ -201,7 +201,13 @@ We provide a video demo for showing the result of X-StereoLab. Here we show the 
 ### Citations
 If you find our work useful in your research, please consider citing:
 ```
-* refercence[1] 
+@misc{XStereoLab2021,
+    title={{X-StereoLab} stereo matching and stereo 3D object detection toolbox},
+    author={X-StereoLab Contributors},
+    howpublished = {\url{https://github.com/meteorshowers/X-StereoLab}},
+    year={2021}
+}
+* refercence[2] 
 @article{tankovich2020hitnet,
   title={HITNet: Hierarchical Iterative Tile Refinement Network for Real-time Stereo Matching},
   author={Tankovich, Vladimir and H{\"a}ne, Christian and Fanello, Sean and Zhang, Yinda and Izadi, Shahram and Bouaziz, Sofien},
@@ -209,7 +215,7 @@ If you find our work useful in your research, please consider citing:
   year={2020}
 }
 
-* refercence[2] 
+* refercence[3] 
 @inproceedings{tankovich2018sos,
   title={Sos: Stereo matching in o (1) with slanted support windows},
   author={Tankovich, Vladimir and Schoenberg, Michael and Fanello, Sean Ryan and Kowdle, Adarsh and Rhemann, Christoph and Dzitsiuk, Maksym and Schmidt, Mirko and Valentin, Julien and Izadi, Shahram},
