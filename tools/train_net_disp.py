@@ -264,6 +264,32 @@ def main_worker(gpu, ngpus_per_node, args, cfg, exp):
         total_train_loss = 0
         adjust_learning_rate(optimizer, epoch, args=args)
 
+        # test have some speed bug
+        if epoch%1 == 0:
+            EPEs = AverageMeter()
+            Bad3s = AverageMeter()
+            for batch_idx, data_batch in enumerate(TestImgLoader):
+                output6, disp_L = test(model, **data_batch)
+                
+                output6 = output6.unsqueeze(1)
+                # print('********')
+                # three_pixel = cal_3pixel_error(output6, disp_L)
+            #     Bad3s.update(three_pixel)
+                mask = (disp_L<196)  & (disp_L>0)
+                if mask.sum()>0:
+                    EPEs.update((output6[mask] - disp_L[mask]).abs().mean().item())
+                # print()
+            #     if batch_idx %  2 ==0:
+            #         info_str = 'EPE {} = {:.2f} Bads= {:.4f}'.format(batch_idx, EPEs.avg, Bad3s.avg)   
+            #         print(info_str)  
+                info_str = 'EPE {} = {:.2f} '.format(batch_idx, EPEs.avg)    
+                if main_process(args):
+                    logger.info(info_str)
+
+
+
+
+
         for batch_idx, data_batch in enumerate(TrainImgLoader):
             start_time = time.time()
             if epoch == 1 and cfg.warmup and batch_idx < args.max_warmup_step:
