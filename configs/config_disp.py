@@ -10,7 +10,7 @@ cfg.btrain = 4
 
 
 #------------- disparity ---------------#
-cfg.model = 'stereonet' # ['stereonet', 'activestereonet', 'hitnet', 'sos']
+cfg.model = 'hitnet' # ['stereonet', 'activestereonet', 'hitnet', 'sos']
 cfg.maxdisp = 192
 cfg.mindisp = 0
 cfg.loss_disp = True
