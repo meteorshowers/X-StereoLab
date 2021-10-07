@@ -161,9 +161,7 @@ on working...
             <!-- <th>Inference Time(s/im)</th> -->
             <th>Train Mem (GB/Img)</th>
             <th>Test Mem (GB/Img)</th>
-            <th>3D AP</th>
             <th>BEV AP</th>
-            <th>2D AP</th>
             <th>Models</th>
         </tr>
     </thead>
