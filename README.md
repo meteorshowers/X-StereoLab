@@ -161,8 +161,8 @@ on working...
             <!-- <th>Inference Time(s/im)</th> -->
             <th>Train Mem (GB/Img)</th>
             <th>Test Mem (GB/Img)</th>
-            <th>BEV AP</th>
-            <th>Models</th>
+            <th>3D BEV AP (Ours small plume)</th>
+            <th>3D BEV AP (Paper small plume)</th>
         </tr>
     </thead>
     <tbody>
@@ -173,8 +173,8 @@ on working...
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td><a href=""> GoogleDrive </a></td>
+            <td>72.9  62.5  56.9</td>
+            <td>74.4 61.7 55.8</td>
         </tr>
     </tbody>
 </table>
@@ -249,10 +249,11 @@ If you find our work useful in your research, please consider citing:
 
 ### Acknowledgment
 <!-- * Thanks to  <a href="https://github.com/vtankovich"> vtankovich
- 
+<!-- * Thanks to  <a href="https://github.com/mileyan"> Yan Wang 
 * Thanks to  <a href="https://github.com/samehkhamis"> SamehKhamis -->
 
 * Thanks to  vtankovich
+* Thanks to  Yan Wang
 * Thanks to  SamehKhamis 
 
 ### License
