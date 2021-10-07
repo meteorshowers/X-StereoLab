@@ -150,8 +150,7 @@ on working ...
 </table>
 
 ### stereo 3D detection Performance and Model Zoo
-on working...
-
+#### PLUME: Efficient 3D Object Detection from Stereo Images
 
 <table>
     <thead>
