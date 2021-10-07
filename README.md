@@ -254,7 +254,7 @@ If you find our work useful in your research, please consider citing:
 
 ### Acknowledgment
 
-* Thanks to  <a href="https://github.com/samehkhamis"> SamehKhamis(NVIDIA) 
+* Thanks to  <a href="https://github.com/samehkhamis"> SamehKhamis (NVIDIA) 
 
 ### License
 The code is released under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License for NonCommercial use only. Any commercial use should get formal permission first.
