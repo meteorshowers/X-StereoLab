@@ -171,10 +171,8 @@ on working...
             <td></td>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
             <td>72.9  62.5  56.9</td>
-            <td>74.4 61.7 55.8</td>
+            <td>74.4  61.7  55.8</td>
         </tr>
     </tbody>
 </table>
