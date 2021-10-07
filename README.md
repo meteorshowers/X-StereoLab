@@ -242,18 +242,19 @@ If you find our work useful in your research, please consider citing:
          <a href="https://github.com/vtankovich">vtankovich</a> ​
         <p>GOOGLE  </p>​
       </td>
+     <td>
+         <a href="https://github.com/mileyan"><img width="70" height="70" src="https://avatars.githubusercontent.com/u/74434832?v=4" alt="pic"></a><br>
+         <a href="https://github.com/mileyan">Yan Wang</a> ​
+        <p>Waymo  </p>​
+      </td>     
     </tr>
   </tbody>
 </table>
 
 
 ### Acknowledgment
-<!-- * Thanks to  <a href="https://github.com/vtankovich"> vtankovich
-<!-- * Thanks to  <a href="https://github.com/mileyan"> Yan Wang 
-* Thanks to  <a href="https://github.com/samehkhamis"> SamehKhamis -->
 
-* Thanks to  vtankovich
-* Thanks to  Yan Wang
+* Thanks to  <a href="https://github.com/samehkhamis"> SamehKhamis -->
 * Thanks to  SamehKhamis 
 
 ### License
