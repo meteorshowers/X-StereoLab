@@ -4,6 +4,10 @@
 X-StereoLab is an open source stereo matching and stereo 3D object detection toolbox based on PyTorch.
 
 ## News: We released the codebase v0.0.0.
+* matching and detection model  result.
+<div align="center">
+ <img src="doc/demo.png" width="80%">
+</div>
 
 
 * GOOGLE HITNET model pytorch model will be released.
